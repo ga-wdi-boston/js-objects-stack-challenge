@@ -71,6 +71,16 @@ stack.pop(); //=> 3
 
 Which parts of each method are side-effects, and which are the "main" effect?
 
+## Tasks
+
+Developers should run these often!
+
+-   `grunt nag`: runs code quality analysis tools on your code
+    and complains.
+-   `grunt test`: runs any automated tests; may depend on `grunt build`.
+-   `grunt`: runs both `nag` and then `test`
+-   `grunt make-standard`: reformats all your code in the standard style.
+
 ## [License](LICENSE)
 
 1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
