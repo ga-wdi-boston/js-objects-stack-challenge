@@ -13,14 +13,23 @@ reminder of how we use prototypes, we've provided starter code including a
 constructor function and one completed prototype method. Your task will be to
 complete the remaining method.
 
+## Prerequisites
+
+-   Topics with which developers should be familiar with.
+-   Prerequisites are "just-in-time", so if I have a prerequisite that mentions
+    Sass, I would **not** need to include CSS as a prerequisite.
+-   [Links to previous materials](https://www.github.com/ga-wdi-boston/example)
+    are often useful.
+-   In a challenge, it is useful to link to reference material, such as talk
+    repositories.
+
 ## Instructions
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-    this repository.
+1.  Fork and clone this repository.
 1.  Change into the new directory.
 1.  Install dependencies.
-1.  Create a working branch, `challenge`.
-1.  Follow the remaining instructions.
+1.  Create and checkout a new branch to work on.
+1.  Fulfill the listed requirements.
 
 Create a custom JavaScript object modeling a stack using a constructor function
 and a prototype.
