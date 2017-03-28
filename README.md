@@ -67,12 +67,16 @@ const stack = new Stack(1, 2, 3);
 stack.pop();  // 3
 ```
 
-### Allow `push` to chain
+### Enable Method Chaining on `push()`
 
-```js
-let stack = new Stack();
+Modify `push()` to allow method chaining.
+
+```javascript
+const stack = new Stack();
+
 stack.push(1).push(2).push(3);
-stack.pop(); //=> 3
+
+stack.pop();  // 3
 ```
 
 Which parts of each method are side-effects, and which are the "main" effect?
