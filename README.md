@@ -30,10 +30,11 @@ cloning](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone).
 
 ## Requirements
 
-The goal of this exercise is to practice writing prototype methods. As a
-reminder of how we use prototypes, we've provided starter code including a
-constructor function and one completed prototype method. Your task will be to
-complete the remaining method.
+The goal of this challenge is to practice writing prototype methods by
+implementing one on a construction function that models a stack. As a reminder
+of how prototypes are used, the provided starter code includes a constructor
+function for `Stack` and a completed prototype method on it, `pop()`. The
+challenge is to implement the remaining method, `push()`.
 
 Create a custom JavaScript object modeling a stack using a constructor function
 and a prototype.
