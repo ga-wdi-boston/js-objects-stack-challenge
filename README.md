@@ -79,7 +79,8 @@ stack.push(1).push(2).push(3);
 stack.pop();  // 3
 ```
 
-Which parts of each method are side-effects, and which are the "main" effect?
+Which parts of each method are the side effects and which parts are the "main"
+effect?
 
 ## Tasks
 
