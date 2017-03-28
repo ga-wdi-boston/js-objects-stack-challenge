@@ -10,11 +10,6 @@
 > Additionally, a peek operation may give access to the top without modifying
 > the stack. -- [Stack (abstract data type) - Wikipedia](https://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29)
 
-The goal of this exercise is to practice writing prototype methods. As a
-reminder of how we use prototypes, we've provided starter code including a
-constructor function and one completed prototype method. Your task will be to
-complete the remaining method.
-
 ## Prerequisites
 
 -   Topics with which developers should be familiar with.
@@ -38,6 +33,11 @@ and a prototype.
 Starter code has been provided in [`lib/stack.js`](lib/stack.js).
 
 ## Requirements
+
+The goal of this exercise is to practice writing prototype methods. As a
+reminder of how we use prototypes, we've provided starter code including a
+constructor function and one completed prototype method. Your task will be to
+complete the remaining method.
 
 -   You should be able to create a new stack with `let stack = new Stack();`.
 -   Your stack should have two methods, `push` and `pop`.
