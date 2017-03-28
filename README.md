@@ -56,11 +56,15 @@ you've met these requirements.
 Change `xit` to `it` in `spec/stack.spec.js` to have `grunt test` check the
 bonuses.
 
-### Pre-fill the stack on instantiation
+### Enable Prefilled Stacks
 
-```js
-let stack = new Stack(1, 2, 3);
-stack.pop(); //=> 3
+Modify the constructor function to take an arbitrary number of arguments and
+store them as elements in the stack upon instantiation.
+
+```javascript
+const stack = new Stack(1, 2, 3);
+
+stack.pop();  // 3
 ```
 
 ### Allow `push` to chain
