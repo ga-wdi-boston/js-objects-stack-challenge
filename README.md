@@ -73,6 +73,11 @@ stack.pop(); //=> 3
 
 Which parts of each method are side-effects, and which are the "main" effect?
 
+You should be running `grunt nag` before diagnosing any bugs, since it finds
+some of the most common sources of errors. After `grunt nag` passes, you should
+run `grunt test` to run the included tests. Tests will tell you whether or not
+you've met these requirements.
+
 ## Tasks
 
 Developers should run these often!
