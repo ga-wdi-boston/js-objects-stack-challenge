@@ -11,6 +11,8 @@
 > the stack. -- [Stack (abstract data type) - Wikipedia](https://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29)
 
 ## Prerequisites
+-   [JavaScript Objects: Referencing Own Properties](https://github.com/ga-wdi-boston/js-objects-this)
+-   [JavaScript Functions: Ins and Outs](https://github.com/ga-wdi-boston/js-functions-ins-and-outs)
 -   [Stack (abstract data type) - Wikipedia](https://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29)
 
 ## Instructions
