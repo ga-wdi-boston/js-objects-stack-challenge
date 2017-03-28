@@ -38,14 +38,13 @@ of how prototypes are used, the provided starter code includes a constructor
 function for `Stack` and a completed prototype method on it, `pop()`. The
 challenge is to implement the remaining method, `push()`.
 
--   You should be able to create a new stack with `let stack = new Stack();`.
--   Your stack should have two methods, `push` and `pop`.
-
-    -   `push` adds a new value to the stack's storage.
-    -   `pop` removes the most recently added value from the stack's storage
-        and returns it.
-
--   You should not use `Array.prototype.push()` or `Array.prototype.pop()`.
+-   It should be possible to create a new stack by invoking the `Stack`
+    constructor function. e.g., `const stack = new Stack();`.
+-   The stack should have two methods, `push()`, and `pop()`.
+    -   `push()` takes one argument and adds it to the stack.
+    -   `pop()` does not take any arguments, removes the most recently added
+        element from the stack, and returns it.
+-   The `Array` methods `pop()` and `push()` should not be used.
 
 As you work, you may run `grunt test` to check your code against these
 requirements.
