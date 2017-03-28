@@ -7,7 +7,7 @@ chai.use(chaiAsPromised)
 
 const expect = chai.expect
 
-const Stack = require('../lib/stack')
+const Stack = require('../lib/challenge')
 
 describe('Stack', function () {
   it('creates an empty stack', function () {
