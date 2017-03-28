@@ -36,10 +36,6 @@ of how prototypes are used, the provided starter code includes a constructor
 function for `Stack` and a completed prototype method on it, `pop()`. The
 challenge is to implement the remaining method, `push()`.
 
-Create a custom JavaScript object modeling a stack using a constructor function
-and a prototype.
-Starter code has been provided in [`lib/stack.js`](lib/stack.js).
-
 -   You should be able to create a new stack with `let stack = new Stack();`.
 -   Your stack should have two methods, `push` and `pop`.
 
