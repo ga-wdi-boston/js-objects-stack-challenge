@@ -21,16 +21,16 @@
 1.  Create and checkout a new branch to work on.
 1.  Fulfill the listed requirements.
 
-Create a custom JavaScript object modeling a stack using a constructor function
-and a prototype.
-Starter code has been provided in [`lib/stack.js`](lib/stack.js).
-
 ## Requirements
 
 The goal of this exercise is to practice writing prototype methods. As a
 reminder of how we use prototypes, we've provided starter code including a
 constructor function and one completed prototype method. Your task will be to
 complete the remaining method.
+
+Create a custom JavaScript object modeling a stack using a constructor function
+and a prototype.
+Starter code has been provided in [`lib/stack.js`](lib/stack.js).
 
 -   You should be able to create a new stack with `let stack = new Stack();`.
 -   Your stack should have two methods, `push` and `pop`.
