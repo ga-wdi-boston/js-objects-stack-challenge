@@ -46,8 +46,10 @@ challenge is to implement the remaining method, `push()`.
         element from the stack, and returns it.
 -   The `Array` methods `pop()` and `push()` should not be used.
 
-As you work, you may run `grunt test` to check your code against these
-requirements.
+You should be running `grunt nag` before diagnosing any bugs, since it finds
+some of the most common sources of errors. After `grunt nag` passes, you should
+run `grunt test` to run the included tests. Tests will tell you whether or not
+you've met these requirements.
 
 ## Bonuses
 
@@ -70,11 +72,6 @@ stack.pop(); //=> 3
 ```
 
 Which parts of each method are side-effects, and which are the "main" effect?
-
-You should be running `grunt nag` before diagnosing any bugs, since it finds
-some of the most common sources of errors. After `grunt nag` passes, you should
-run `grunt test` to run the included tests. Tests will tell you whether or not
-you've met these requirements.
 
 ## Tasks
 
