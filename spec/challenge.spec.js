@@ -9,73 +9,74 @@ const expect = chai.expect
 
 const Stack = require('../lib/challenge')
 
-describe('Stack', function () {
-  it('creates an empty stack', function () {
-    const stack = new Stack()
-    const empty = {}
-
-    expect(stack).to.be.an.instanceof(Stack)
-    expect(stack._storage).to.deep.equal(empty)
+describe('Requirements', () => {
+  beforeEach(() => {
+    this.stack = new Stack()
   })
 
-  xit('creates a stack containing the arguments', function () {
-    const stack = new Stack('a', 'b', 'c')
-    const storage = {
-      0: 'a',
-      1: 'b',
-      2: 'c'
-    }
+  describe('Stack', () => {
+    it('creates an instance of Stack', () => {
+      expect(this.stack).to.be.an.instanceof(Stack)
+    })
 
-    expect(stack._storage).to.deep.equal(storage)
-  })
-})
-
-describe('Stack.prototype.push()', function () {
-  it('adds new values to the stack', function () {
-    const stack = new Stack()
-    const pushed = {
-      foo: 'bar'
-    }
-
-    stack.push(pushed)
-
-    expect(stack._storage).to.deep.equal({
-      0: pushed
+    it('creates an empty stack', () => {
+      expect(this.stack._storage).to.deep.equal({})
     })
   })
 
-  xit('returns the stack itself', function () {
-    const stack = new Stack()
-    const pushed = {
-      foo: 'bar'
-    }
+  describe('Stack.prototype.push()', () => {
+    it('takes an argument and adds it to the stack', () => {
+      const pushed = { foo: 'bar' }
 
-    expect(stack.push(pushed)).to.equal(stack)
+      this.stack.push(pushed)
+
+      expect(this.stack._storage).to.deep.equal({ '0': pushed })
+    })
+  })
+
+  describe('Stack.prototype.pop()', () => {
+    it('returns undefined if the stack is empty', () => {
+      expect(this.stack.pop()).to.be.undefined  // eslint-disable-line
+    })
+
+    it('removes the most recently added element from the stack', () => {
+      this.stack._size = 1
+      this.stack._storage = { '0': 'a' }
+      this.stack.pop()
+      const emptyObject = {}
+
+      expect(this.stack._storage).to.deep.equal(emptyObject)
+    })
+
+    it('returns the element that was removed from the stack', () => {
+      this.stack._size = 3
+      this.stack._storage = { '0': 'a', '1': 'b', '2': 'c' }
+
+      expect(this.stack.pop()).to.equal('c')
+      expect(this.stack.pop()).to.equal('b')
+      expect(this.stack.pop()).to.equal('a')
+    })
   })
 })
 
-describe('Stack.prototype.pop()', function () {
-  it('removes the most recently added value from the stack', function () {
-    const stack = new Stack()
-    const empty = {}
+describe('Bonuses', () => {
+  describe('Stack', () => {
+    it('creates a stack containing the arguments as elements', () => {
+      const stack = new Stack('a', 'b', 'c')
+      const storage = { '0': 'a', '1': 'b', '2': 'c' }
 
-    stack.push(1)
-    stack.pop()
-
-    expect(stack._storage).to.deep.equal(empty)
+      expect(stack._storage).to.deep.equal(storage)
+    })
   })
 
-  it('returns the value removed from the stack', function () {
-    const stack = new Stack()
+  describe('Stack.prototype.push()', () => {
+    it('returns the stack', () => {
+      const stack = new Stack()
+      const pushed = { foo: 'bar' }
 
-    stack.push(1)
+      stack.push(pushed)
 
-    expect(stack.pop()).to.equal(1)
-  })
-
-  it('returns undefined when called on an empty stack', function () {
-    const stack = new Stack()
-
-    expect(stack.pop()).to.be.undefined
+      expect(stack.push(pushed)).to.deep.equal(stack)
+    })
   })
 })
