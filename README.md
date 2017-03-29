@@ -33,10 +33,10 @@ cloning](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone).
 ## Requirements
 
 The goal of this challenge is to practice writing prototype methods by
-implementing one on a construction function that models a stack. As a reminder
-of how prototypes are used, the provided starter code includes a constructor
-function for `Stack` and a completed prototype method on it, `pop()`. The
-challenge is to implement the remaining method, `push()`.
+implementing one on a construction function that models a stack as an object. As
+a reminder of how prototypes are used, the provided starter code includes a
+constructor function for `Stack` and a completed prototype method on it,
+`pop()`. The challenge is to implement the remaining method, `push()`.
 
 -   It should be possible to create a new stack by invoking the `Stack`
     constructor function. e.g., `const stack = new Stack();`.
